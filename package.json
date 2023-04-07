@@ -1,0 +1,25 @@
+{
+  "name": "evmdis",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/index.js",
+  "bin": {
+    "evmdis": "./bin/dis-bin.js"
+  },
+  "scripts": {
+    "test": "mocha",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^7.0.1",
+    "yargs": "^12.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "ethers": "^6.3.0",
+    "nice-repl": "^0.1.2",
+    "typescript": "^5.0.4"
+  }
+}
