@@ -1,2 +1,2 @@
-export default function disassemble(bytecode: any): any;
-export declare function disassembleWithoutSegmentation(bytecode: any): any[][];
+export declare function disassembleAndSegment(bytecode: any): any;
+export declare function disassemble(bytecode: any): any[][];

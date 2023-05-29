@@ -6,10 +6,10 @@ import { segment } from "./segment";
 import { annotate } from "./annotate";
 import dis from "./dis";
 
-export default function disassemble(bytecode) {
+export function disassembleAndSegment(bytecode) {
   return annotate(stripReachable(decorateJumps(segment(dis(bytecode)))));
 }
 
-export function disassembleWithoutSegmentation(bytecode) {
+export function disassemble(bytecode) {
   return dis(bytecode);
 }
