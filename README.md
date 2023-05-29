@@ -3,8 +3,9 @@
 Usage:
 
 ```js
-var disasm = require('kool-evmdis');
-const ops = disasm('0x601010');
+var { disassemble } = require('evmdis');
+const ops = disassemble('0x601010');
+
 /*
 [ [ 'PUSH1', '0x60', '0x00', '0x10' ],
   [ 'LT', '0x10', '0x02', '0x' ] ] */
